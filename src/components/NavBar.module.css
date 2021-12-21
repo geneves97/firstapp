@@ -1,0 +1,38 @@
+.list{
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.item{
+  float: left;
+}
+.item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ .item link {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 5%;
+ }
+
+.item:hover:not(.active) {
+  background-color: #111;
+}
+
+.item svg{
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5em;
+}
+
+
