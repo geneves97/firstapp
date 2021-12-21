@@ -1,30 +1,14 @@
 import React from 'react';
-import { oneOf, bool } from 'prop-types';
-import { Link } from 'react-router-dom';
 import './Button.module.css';
 
-const cbn = 'ui-button';
-
-const UIButton = ({ onClick, to, theme, rounded, children, className, ...restProps }) => {
-  const Component = to ? Link : 'button';
-
-  return (
-    <Component
-      {...restProps}
-      onClick={onClick}
-      to={to}
-    >
-      {children}
-    </Component>
+function Button(){
+  return(
+    <div>
+      <button className="button"> Entrar </button>
+    </div>
   )
 }
 
-UIButton.propTypes = {
-  rounded: bool,
-  theme: oneOf([
-    'bordered-green',
-    'contained-green',
-  ]),
-};
 
-export default UIButton;
+
+export default Button;
