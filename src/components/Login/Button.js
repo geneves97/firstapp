@@ -1,10 +1,10 @@
-import React from 'react';
-import './Button.module.css';
+import React from 'react'
+import styles from './Button.module.css'
 
 function Button(){
   return(
     <div>
-      <button className="button"> Entrar </button>
+      <button className={styles.button}> Entrar </button>
     </div>
   )
 }

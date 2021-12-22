@@ -19,10 +19,10 @@ function Login() {
   }
 
   return (
-    <div className="user-login">
-      <h1 className="user-login__title">Acessar o Sistema</h1>
+    <div className={styles.userLogin}>
+      <h1 className={styles.userLogin__title}>Acessar o Sistema</h1>
       <form>
-        <div className="user-login__form-control">
+        <div className={styles.userLogin__formControl}>
           <label htmlFor="user">Usuário</label>
           <input
             id="user"
@@ -32,7 +32,7 @@ function Login() {
             value={values.user}
           />
         </div>
-        <div className="user-login__form-control">
+        <div className={styles.userLogin__formControl}>
           <label htmlFor="password">Senha</label>
           <input
             id="password"
@@ -45,7 +45,7 @@ function Login() {
       <Button
           type="submit"
           theme="contained-green"
-          className="user-login__submit-button"
+          className={styles.userLogin__submitButton}
           rounded
         >
           Entrar
